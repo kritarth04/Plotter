@@ -51,10 +51,42 @@ def createdata(data):
       print("Input Error ! Try again")
    return df1
 
-def main(cat):
-   pass
-   
 
+def plotter(plot):
+   pass
+
+
+def plotter2(plot):
+   pass
+
+
+def main(cat):
+   if cat == 1:
+      print("Select the type of plot you need [Type_1 - 6] :")
+      print("1 > Line Plot")
+      print("2 > Scatter plot")
+      print("3 > Bar plot")
+      print("4 > Histogram")
+      print("5 > Box plot")
+      print("6 > surface plot")
+      plot = int(input())
+      output = plotter(plot)
+   elif cat ==2:
+      print("Select the type of plot you need [Type_1 - 7] :")
+      print("1 > Line Plot")
+      print("2 > Scatter plot")
+      print("3 > Bar plot")
+      print("4 > Histogram")
+      print("5 > Box plot")
+      print("6 > surface plot")
+      print("7 > Bubble plot")
+      plot = int(input())
+      output = plotter2(plot)
+   else:
+      print("Please enter correct value !")
+
+
+   
 print("Select the type of data you need to plot [ By writing 1,2 or 3]\n1- Random data with 100 rows and 5 colums\n2- Customize dataframe with 5 columns and 4 rows\n3- Upload csv/json/txt file")
 data = int(input())
 df1 = createdata(data)
